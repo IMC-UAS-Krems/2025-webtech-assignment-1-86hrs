@@ -1,0 +1,81 @@
+body {
+  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: white;
+  background-image: url('images/black.jpeg');
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "header header"
+    "contact contact";
+  gap: 0px;
+  padding: 10px;
+}
+
+.container div {
+  padding: 20px;
+}
+
+.container div.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333333;
+    display: flex;
+    border-radius: 25px;
+  }
+
+  ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    background-color: #111111;
+    border-radius: 25px;
+  }
+
+}
+
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.container div.contact {
+  grid-area: contact;
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+      /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+}
