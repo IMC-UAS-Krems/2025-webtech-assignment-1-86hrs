@@ -1,5 +1,7 @@
 body {
-  background-image: url('../images/black.jpeg');
+  background-image: url('../images/cityscape.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   font-size: 1.4rem;
   font-family: "Roboto Mono", monospace;
   font-style: normal;
@@ -20,7 +22,7 @@ body {
   ul {
     list-style-type: none;
     padding: 10px;
-    background-color: #333333;
+    background-color: #282828;
     display: flex;
     border-radius: 25px;
   }
@@ -33,8 +35,9 @@ body {
   }
 
   ul li a:hover {
-    background-color: #111111;
+    background-color: #fe8019;
     border-radius: 25px;
+    transition: background-color 0.7s;
   }
 
 }

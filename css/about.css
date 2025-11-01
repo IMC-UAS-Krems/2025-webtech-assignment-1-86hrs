@@ -3,9 +3,9 @@
   grid-template-areas:
     "nav nav nav"
     "header header header"
-    "content content image1"
-    "latest latest image2";
-  grid-template-columns: 3fr 1fr;
+    "content_wrap content_wrap image1"
+    "latest_wrap latest_wrap image2";
+  grid-template-columns: 5fr 1fr;
   gap: 0px;
   padding: 10px;
 }
@@ -32,9 +32,10 @@
   font-size: 1.3rem;
 
   img {
-    margin-top: 50px;
+    margin-top: -15px;
     content: center;
-    max-height: 450px;
+    max-width: 500px;
+    height: auto;
     border-radius: 25px;
   }
 }
@@ -47,18 +48,53 @@
 
   img {
     border-radius: 25px;
-    margin-top: 50px;
+    margin-right: +40px;
     content: center;
     max-width: 500px;
     height: auto;
   }
 }
 
+.container div.img_desc_wrap {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.container div.img_desc {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 25px;
+  background-color: #282828;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div.content_wrap {
+  grid-area: content_wrap;
+}
+
+.container div.latest_wrap {
+  grid-area: latest_wrap;
+}
+
 .container div.content {
-  grid-area: content;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 120px;
+  margin-right: -100px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 25px;
 }
 
 .container div.latest {
-  grid-area: latest;
+  padding-left: 5%;
+  background-color: rgb(28, 28, 28);
+  border-radius: 25px;
+  margin-right: 0px;
+  margin-left: 120px;
   text-align: left;
 }

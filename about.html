@@ -19,10 +19,9 @@
 
 <body>
   <div class="container">
-
     <div class="nav">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -35,39 +34,49 @@
     </div>
     <div class="image1">
       <img src="images/me.jpg">
-      <div id="img_desc">
-        <h5>Chisinau, Moldova</h5>
+      <div class="img_desc_wrap">
+        <div class="img_desc">
+          <h5>Chisinau, Moldova</h5>
+        </div>
       </div>
     </div>
 
     <div class="image2">
-      <img src="images/bunker.jpeg">
-      <div id="img_desc">
-        <h5>At a Soviet Nuclear Bunker, Moldova</h5>
+      <img src="images/voxels.png">
+      <div class="img_desc_wrap">
+        <div class="img_desc">
+          <h5>Voxel scene in OpenGL</h5>
+        </div>
       </div>
     </div>
 
-    <div class="content">
-      <h3>Who am I?</h3>
-      <p> I'm a 19 year old computer science student based in Krems, Austria. I was born in Chisinau, Moldova. My
-        first
-        programming experience was with basic C# console applications, then found out about a game hacking forum
-        called
-        UnknownCheats, which inspired me to make my own internal DLL CS:GO cheat built in C++ and with Windows apis.
-        After CS2 released and my
-        cheats weren't compatible anymore I started fiddling with OpenGL and 3D graphics, which I still enjoy doing,
-        even
-        tough I am not that good at them.</p>
+    <div class="content_warp">
+      <div class="content">
+        <h3>Who am I?</h3>
+        <p> I'm a 19 year old computer science student based in Krems, Austria. I was born in Chisinau, Moldova. My
+          first
+          programming experience was basic C# console applications, then found out about a game hacking forum
+          called
+          UnknownCheats, which inspired me to make my own internal DLL CS:GO cheat built in C++ and with Windows
+          apis.
+          After CS2 released and my
+          cheats weren't compatible anymore I started fiddling with OpenGL and Emulator Development, which I still enjoy
+          doing,
+          even
+          tough I am not that good at them.</p>
+      </div>
     </div>
-    <div class="latest">
-      <h4>Latest Projects</h4>
-      <ul>
-        <li> A PSX Emulator written in c++</li>
-        <li> A semi working .obj model renderer written in C and OpenGL</li>
-        <li> A voxel "engine" written in C++ and OpenGl</li>
-        <li> A simple ray tracer written in Rust that outputs to a simple image format </li>
-        <li> Many copies of mobile games done in Rust and Bevy for practice sake </li>
-      </ul>
+    <div class="latest_wrap">
+      <div class="latest">
+        <h4>Latest Projects</h4>
+        <ul>
+          <li> A PSX Emulator written in c++</li>
+          <li> A semi working .obj model renderer written in C and OpenGL</li>
+          <li> A voxel "engine" written in C++ and OpenGl</li>
+          <li> A simple ray tracer written in Rust that outputs to a simple image format </li>
+          <li> Many copies of mobile games done in Rust and Bevy for practice sake </li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
