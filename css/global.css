@@ -1,0 +1,40 @@
+body {
+  background-image: url('../images/black.jpeg');
+  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: white;
+}
+
+.container div {
+  padding: 10px;
+}
+
+.container div.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333333;
+    display: flex;
+    border-radius: 25px;
+  }
+
+  ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    background-color: #111111;
+    border-radius: 25px;
+  }
+
+}

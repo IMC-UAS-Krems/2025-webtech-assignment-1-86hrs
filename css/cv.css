@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "header header";
+  gap: 0px;
+  padding: 10px;
+}
+
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}

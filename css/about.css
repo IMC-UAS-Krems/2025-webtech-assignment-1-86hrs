@@ -1,0 +1,64 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "content content image1"
+    "latest latest image2";
+  grid-template-columns: 3fr 1fr;
+  gap: 0px;
+  padding: 10px;
+}
+
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+@media(max-width: 1000px) {
+  .image2 {
+    display: none;
+  }
+
+  .image1 {
+    display: none;
+  }
+}
+
+.container div.image2 {
+  line-height: 1.5;
+  text-align: center;
+  grid-area: image2;
+  font-size: 1.3rem;
+
+  img {
+    margin-top: 50px;
+    content: center;
+    max-height: 450px;
+    border-radius: 25px;
+  }
+}
+
+.container div.image1 {
+  line-height: 1.5;
+  text-align: center;
+  grid-area: image1;
+  font-size: 1.3rem;
+
+  img {
+    border-radius: 25px;
+    margin-top: 50px;
+    content: center;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+.container div.content {
+  grid-area: content;
+}
+
+.container div.latest {
+  grid-area: latest;
+  text-align: left;
+}
