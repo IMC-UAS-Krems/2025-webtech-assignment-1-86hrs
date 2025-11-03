@@ -1,13 +1,16 @@
+/* Google fonts import to use the JetBrains Mono font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   background-image: url('../images/cityscape.jpg');
   background-size: cover;
   background-attachment: fixed;
-  font-size: 1.4rem;
-  font-family: "Roboto Mono", monospace;
-  font-style: normal;
+  font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
-  color: white;
+  font-weight: 500;
+  font-style: normal;
+  color: #FAF8F1;
+  font-size: 20px;
 }
 
 .container div {
@@ -29,7 +32,7 @@ body {
 
   ul li a {
     display: block;
-    color: white;
+    color: #FAF8F1;
     padding: 14px 16px;
     text-decoration: none;
   }

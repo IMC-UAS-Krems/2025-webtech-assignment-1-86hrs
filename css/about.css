@@ -15,12 +15,9 @@
   text-align: center;
 }
 
-@media(max-width: 1000px) {
-  .image2 {
-    display: none;
-  }
 
-  .image1 {
+@media(max-width: 1000px) {
+  img {
     display: none;
   }
 }
@@ -34,9 +31,15 @@
   img {
     margin-top: -15px;
     content: center;
-    max-width: 500px;
+    max-width: 450px;
     height: auto;
     border-radius: 25px;
+  }
+
+  img:hover {
+    transform-origin: right;
+    transform: scale(1.2, 1.2) translateY(+10px);
+    transition: transform 0.3s;
   }
 }
 

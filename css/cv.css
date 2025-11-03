@@ -11,3 +11,9 @@
   grid-area: header;
   text-align: center;
 }
+
+
+.cv {
+  background-color: rgb(28, 28, 28);
+  border-radius: 25px;
+}
