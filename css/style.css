@@ -1,10 +1,9 @@
 .container {
   display: grid;
   grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    "content content content";
-  grid-template-columns: 3fr 1fr;
+    "nav nav"
+    "header header"
+    "content content";
   gap: 0px;
   padding: 10px;
 }
@@ -14,7 +13,19 @@
   text-align: center;
 }
 
-.container div.content {
+.container div.content_wrap {
   grid-area: content;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.container div.content {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #282828;
+  border-radius: 25px;
 }

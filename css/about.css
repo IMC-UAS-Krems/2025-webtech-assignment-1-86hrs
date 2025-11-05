@@ -17,7 +17,9 @@
 
 
 @media(max-width: 1000px) {
-  img {
+
+  .image1,
+  .image2 {
     display: none;
   }
 }
@@ -99,5 +101,4 @@
   border-radius: 25px;
   margin-right: 0px;
   margin-left: 120px;
-  text-align: left;
 }
