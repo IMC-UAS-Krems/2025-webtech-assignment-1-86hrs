@@ -22,6 +22,10 @@
   .image2 {
     display: none;
   }
+
+  .container div.latest_wrap {
+    margin-right: 5%;
+  }
 }
 
 .container div.image2 {

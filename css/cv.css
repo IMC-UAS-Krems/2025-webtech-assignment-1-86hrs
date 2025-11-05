@@ -17,3 +17,15 @@
   background-color: rgb(28, 28, 28);
   border-radius: 25px;
 }
+
+@media(max-width: 1200px) {
+  #education {
+    margin-top: -30%;
+  }
+}
+
+@media(max-width: 800px) {
+  #education {
+    margin-top: -90%;
+  }
+}
